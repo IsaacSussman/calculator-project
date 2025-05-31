@@ -1,6 +1,12 @@
 import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
+        //// Take a guess as to how a programming language like java might evaluate expressions
+        //  
+        //  
+        //  
+        //////////////////////////////////////////////////////////////////////////////////////
+
         // Take in an expression using a scanner
         
         // Run convertInfixToPostfix on that expression
@@ -19,7 +25,7 @@ public class App {
         ArrayList<String> result = new ArrayList<String>();
 
         // iterate through expressionChars
-            // if it's an operator or openening parenthesis
+            // if it's an operator or opening parenthesis
                 // If the top operation of the stack is of higher precedence, then
                 // pop back to the beginning or last opening parenthesis in the operatorStack and enqueue
                 // those operators. Then push it to the stack. Remember, you can't peek an empty stack.
@@ -42,14 +48,8 @@ public class App {
 
     public static Double evaluatePostfix(ArrayList<String> expression) {
         Stack<Double> numStack = new Stack<Double>();
-        // iterate through expression
-            // if it's a number
-                // convert it to a double using Double.parseDouble(string)
-                // then push it to the stack
-            // if it's a operator
-                // pop the top two values of the stack into variables
-                // push operate(operator, firstvalue, second value)
-
-        // return final popped value
+        // using a stack and the Double.parseDouble(string) method to
+        // convert strings to Doubles, write a method that evaluates 
+        // a postfix expression. See instructions for more details.
     }
 }

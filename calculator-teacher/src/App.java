@@ -117,4 +117,16 @@ public class App {
         }
         return numStack.pop();
     }
+
+    //These are step by step instructions for the evaluatePostfix method
+    
+        // iterate through expression
+            // if it's a number
+                // convert it to a double using Double.parseDouble(string)
+                // then push it to the stack
+            // if it's a operator
+                // pop the top two values of the stack into variables
+                // push operate(operator, firstvalue, second value)
+
+        // return final popped value
 }
